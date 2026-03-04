@@ -110,5 +110,11 @@ gatk VariantFiltration \
   -filter-name "FS_filter" -filter "FS > 200.0" \
   -filter-name "SOR_filter" -filter "SOR > 10.0"
 
+  #--------------------------------------------------------
+  #Annotate vcf
+  #---------------------------------------------------------
+  java -jar snpEff.jar -v \        
+<snpeff_db> \
+        filtered_snps_final.vcf > $filtered_snps_final.ann.vcf
 
 echo "Pipeline completed for $SAMPLE"
