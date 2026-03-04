@@ -1,0 +1,11 @@
+====================================================
+Software Versions Used in This Study
+====================================================
+
+GATK (Genome Analysis Toolkit)      4.4.0.0
+SnpEff                               5.1
+bedtools                              2.31.0
+
+All tools were executed in a Linux environment.
+GATK was installed via Conda.
+SnpEff was manually downloaded and configured with a custom Ensembl rice database.
