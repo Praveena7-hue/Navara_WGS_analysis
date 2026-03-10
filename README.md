@@ -12,6 +12,7 @@ Reproducible WGS analysis workflow for rice including alignment, variant calling
 Exact versions are provided in `software_versions.txt`.
 
 ## Reproducibility
-All commands used in the filtration of variants are provided in `pipeline.sh`.
-Command used to generate dendrogram plot for SNP data provided in 'dendrogram.R'
-The commands used to overlap the QTL with annotated VCF, seggregate accordingly and the effect of the variants is given in 'segrgate_qtl.py' and variant_effect_qtl.py'
+All commands used for variant filtration are provided in pipeline.sh.
+The command used to generate the dendrogram plot from SNP data is available in dendrogram.R.
+The script qtl_overlap.sh was used to overlap the annotated VCF file with QTL regions.
+The scripts segregate_qtl.py and variant_effect_qtl.py were used to segregate QTL-associated variants and to determine the effects of these variants, respectively.
